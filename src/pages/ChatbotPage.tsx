@@ -556,19 +556,14 @@ const ChatbotPage = () => {
                         theme === 'dark' ? 'bg-gray-700 hover:bg-gray-600' : 'bg-gray-50 hover:bg-gray-100'
                       }`}
                     >
-                      <div className={`w-16 h-16 rounded-lg bg-gradient-to-r ${issue.color} flex items-center justify-center mx-auto mb-4`}>
-                        <issue.icon className="w-8 h-8 text-white" />
+                      <div className={`w-12 h-12 rounded-lg bg-gradient-to-r ${issue.color} flex items-center justify-center mx-auto mb-4`}>
+                        <issue.icon className="w-6 h-6 text-white" />
                       </div>
-                      <h4 className={`font-semibold text-lg ${
+                      <h4 className={`font-semibold text-base ${
                         theme === 'dark' ? 'text-white' : 'text-gray-800'
                       }`}>
                         {issue.name}
                       </h4>
-                      <p className={`text-sm mt-2 leading-relaxed ${
-                        theme === 'dark' ? 'text-gray-400' : 'text-gray-600'
-                      }`}>
-                        {issue.description}
-                      </p>
                     </motion.button>
                   ))}
                 </div>
